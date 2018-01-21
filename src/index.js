@@ -8,7 +8,7 @@ const store = createStore(changeCount)
 
 export function render() {
   ReactDOM.render(
-    <App />,
+    <App store={store} />,
     document.getElementById('root')
   );
 };
